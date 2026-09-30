@@ -6,7 +6,7 @@ import type { Dumpster } from "@/data/dumpsters";
  * Formato: código do país + DDD + número, apenas dígitos.
  */
 export const WHATSAPP_NUMBER: string =
-  import.meta.env.VITE_WHATSAPP_NUMBER ?? "5511999999999";
+  import.meta.env["VITE_WHATSAPP_NUMBER"] ?? "5511999999999";
 
 export const DEFAULT_WHATSAPP_MESSAGE =
   "Olá! Gostaria de informações sobre o aluguel de caçambas.";
