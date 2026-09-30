@@ -6,7 +6,7 @@
 
 /*
  * Design system — Ciclo Verde (aluguel de caçambas)
- * Estética industrial: laranja sólido, grafite, branco, amarelo e roxo de apoio.
+ * Estética industrial: verde claro, branco, laranja e azul de apoio pontual.
  * Cores sempre em oklch e sempre via tokens semânticos.
  */
 
@@ -54,31 +54,31 @@
   --font-body: "Barlow", system-ui, -apple-system, sans-serif;
 
   --background: oklch(1 0 0);
-  --foreground: oklch(0.22 0.012 250);
+  --foreground: oklch(0.22 0.015 152);
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.22 0.012 250);
+  --card-foreground: oklch(0.22 0.015 152);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0.012 250);
+  --popover-foreground: oklch(0.22 0.015 152);
 
-  /* Laranja construção */
-  --primary: oklch(0.645 0.191 42);
-  --primary-foreground: oklch(1 0 0);
-  --primary-dark: oklch(0.49 0.148 41);
+  /* Verde claro — cor principal da marca */
+  --primary: oklch(0.68 0.135 142);
+  --primary-foreground: oklch(0.24 0.06 152);
+  --primary-dark: oklch(0.58 0.125 148);
 
-  /* Grafite industrial */
-  --secondary: oklch(0.265 0.014 255);
+  /* Verde escuro — seções de contraste */
+  --secondary: oklch(0.3 0.05 152);
   --secondary-foreground: oklch(0.98 0 0);
 
-  --muted: oklch(0.965 0.005 250);
-  --muted-foreground: oklch(0.48 0.014 255);
+  --muted: oklch(0.965 0.008 140);
+  --muted-foreground: oklch(0.48 0.02 150);
 
-  /* Amarelo gema */
-  --accent: oklch(0.84 0.164 86);
-  --accent-foreground: oklch(0.24 0.02 80);
+  /* Laranja — cor de ação e destaque */
+  --accent: oklch(0.645 0.191 42);
+  --accent-foreground: oklch(0.25 0.03 55);
 
-  /* Roxo de destaque pontual */
-  --highlight: oklch(0.47 0.18 296);
+  /* Azul — acento pontual */
+  --highlight: oklch(0.5 0.17 258);
   --highlight-foreground: oklch(0.99 0 0);
 
   --destructive: oklch(0.577 0.245 27.325);
@@ -87,15 +87,15 @@
   --whatsapp: oklch(0.63 0.156 155);
   --whatsapp-foreground: oklch(1 0 0);
 
-  --steel: oklch(0.205 0.012 255);
+  --steel: oklch(0.215 0.02 152);
   --steel-foreground: oklch(0.97 0 0);
 
-  --border: oklch(0.905 0.008 250);
-  --input: oklch(0.905 0.008 250);
-  --ring: oklch(0.645 0.191 42);
+  --border: oklch(0.9 0.012 140);
+  --input: oklch(0.9 0.012 140);
+  --ring: oklch(0.45 0.13 148);
 
-  --shadow-card: 0 1px 2px oklch(0.22 0.012 250 / 0.06), 0 8px 20px -12px oklch(0.22 0.012 250 / 0.18);
-  --shadow-elevated: 0 2px 4px oklch(0.22 0.012 250 / 0.08), 0 18px 40px -18px oklch(0.22 0.012 250 / 0.28);
+  --shadow-card: 0 1px 2px oklch(0.22 0.015 152 / 0.06), 0 8px 20px -12px oklch(0.22 0.015 152 / 0.18);
+  --shadow-elevated: 0 2px 4px oklch(0.22 0.015 152 / 0.08), 0 18px 40px -18px oklch(0.22 0.015 152 / 0.28);
 }
 
 @layer base {
