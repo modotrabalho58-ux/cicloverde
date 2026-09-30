@@ -1,29 +1,49 @@
-# Welcome to your Lovable project
+# Ciclo Verde — Aluguel de Caçambas para Entulho
 
-This project was built with [Lovable](https://lovable.dev).
+Landing page + catálogo de caçambas com conversão direta pelo WhatsApp.
 
-## Build with Lovable
+## Stack
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+- React 19 + TypeScript
+- TanStack Start / TanStack Router
+- Tailwind CSS v4 (design system em `src/styles.css`)
+- Vite
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## Rodando localmente
 
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+```bash
+bun install
+bun run dev
 ```
 
-## Built with
+Build de produção:
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+```bash
+bun run build
+```
+
+## Configuração do WhatsApp
+
+O número fica em um único lugar: `src/config/whatsapp.ts`
+(ou na variável de ambiente `VITE_WHATSAPP_NUMBER` — veja `.env.example`).
+
+- `generateWhatsAppLink(mensagem?)` — link genérico de contato/orçamento.
+- `generateDumpsterWhatsAppLink(cacamba)` — link com os dados da caçamba
+  selecionada já preenchidos na mensagem.
+
+## Catálogo
+
+Os produtos ficam em `src/data/dumpsters.ts` (5 caçambas: 3, 4, 5, 7 e 10 m³),
+com nome, capacidade, preço, indicação, dimensões, período, destaque e imagem.
+
+## Estrutura
+
+```
+src/
+  assets/      imagens das caçambas e das obras
+  components/  seções e componentes reutilizáveis
+  config/      configuração central do site e do WhatsApp
+  data/        catálogo de caçambas
+  routes/      rotas (página única em routes/index.tsx)
+  styles.css   design system (tokens semânticos)
+```
